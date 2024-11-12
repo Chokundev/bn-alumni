@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ค้นหาสมาชิกสมาคมศิษย์เก่าบวรนิเวศ</title>
+  <title>ระบบค้นหาสมาชิกสมาคมศิษย์เก่าบวรนิเวศ</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <meta name="description" content="เว็บไซต์สมาคมศิษย์เก่าบวรนิเวศ ในพระอุปถัมภ์ของสมเด็จพระญาณสังวรฯ " />
+  <meta property="og:title" content="ระบบค้นหาสมาชิกสมาคมศิษย์เก่าบวรนิเวศ">
+  <meta property="og:image" content="https://bn-alumni.pages.dev/meta.png">
 </head>
+
 <body class="bg-gray-100 text-gray-800">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    * {
+      font-family: "Niramit", sans-serif;
+    }
+  </style>
   <div class="container mx-auto my-10 p-5 bg-white rounded shadow-lg">
     <h1 class="text-2xl font-bold text-center mb-5">ค้นหาสมาชิกสมาคมศิษย์เก่าบวรนิเวศ</h1>
-    
+
     <!-- Form ค้นหาสมาชิก -->
     <div class="flex flex-col sm:flex-row justify-center mb-5 space-y-2 sm:space-y-0 sm:space-x-2">
       <input type="text" id="memberID" placeholder="ค้นหาด้วยเลขที่สมาชิก" class="border p-2 rounded w-full sm:w-auto">
@@ -24,6 +37,17 @@
     <div id="resultContainer" class="hidden mt-5">
       <div id="resultBody" class="space-y-4"></div>
     </div>
+
+    <!-- ปุ่มกลับหน้าหลัก -->
+    <center>
+      <button onclick="window.location.href='index.html'" class="bg-gray-500 text-white px-4 py-2 rounded mt-5">
+        กลับหน้าหลัก
+      </button>
+    </center>
+    <!-- หรือสามารถใช้ลิงก์แทนปุ่ม -->
+    <!-- <a href="หน้าหลัก.html" class="bg-gray-500 text-white px-4 py-2 rounded mt-5 inline-block">
+      กลับหน้าหลัก
+    </a> -->
   </div>
 
   <script>
@@ -31,7 +55,7 @@
       const memberID = document.getElementById('memberID').value.trim();
       const memberName = document.getElementById('memberName').value.trim();
       const memberSurname = document.getElementById('memberSurname').value.trim();
-      
+
       if (!memberID && (!memberName || !memberSurname)) {
         Swal.fire('โปรดกรอกข้อมูลการค้นหา', 'ค้นหาด้วยเลขที่สมาชิก หรือชื่อและนามสกุล', 'warning');
         return;
@@ -53,7 +77,7 @@
         Swal.close();
 
         // ค้นหาจากข้อมูล JSON ที่ได้จาก API
-        const result = data.find(member => 
+        const result = data.find(member =>
           (memberID && member.ID == memberID) ||
           (memberName && memberSurname && member.name === `${memberName} ${memberSurname}`)
         );
@@ -94,4 +118,5 @@
     }
   </script>
 </body>
+
 </html>
