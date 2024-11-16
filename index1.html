@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สมาคมศิษย์เก่าบวรนิเวศ ในพระอุปถัมภ์ของสมเด็จพระญาณสังวรฯ </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+
+    <meta name="description" content="ระบบตรวจสอบสมาชิกสมาคมศิษย์เก่า | ระบบทะเบียนสมาชิกสมาคมศิษย์เก่า" />
+    <meta property="og:title" content="เว็บไซต์สมาคมศิษย์เก่าบวรนิเวศ ในพระอุปถัมภ์ของสมเด็จพระญาณสังวรฯ ">
+    <meta property="og:image" content="https://bn-alumni.pages.dev/meta.png">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        * {
+            font-family: "Niramit", sans-serif;
+        }
+
+        .typing {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            border-right: 2px solid transparent;
+            /* Cursor effect */
+            animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="bg-yellow-400 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">สมาคมศิษย์เก่าบวรนิเวศ ในพระอุปถัมภ์ของสมเด็จพระญาณสังวรฯ </h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen" style="background-image: url('/img/banner.png');">
+        <div class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white px-4">
+            <!-- เพิ่มแอนิเมชัน typing -->
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center max-w-full px-4 break-words">
+                <span class="typing">ยินดีต้อนรับสู่เว็บไซต์<br />สมาคมศิษย์เก่าบวรนิเวศ</span>
+            </h2>
+
+
+            <p class="text-lg mb-8">สถานที่แห่งความทรงจำและเครือข่ายเพื่อศิษย์เก่าทุกคน</p>
+            <a href="#register"
+                class="bg-yellow-400 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-500">ไปที่ระบบทะเบียนสมาชิก</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto py-16 px-5 text-center" id="about">
+        <h3 class="text-3xl font-bold mb-4">เกี่ยวกับสมาคม</h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            สมาคมศิษย์เก่าบวรนิเวศเป็นเครือข่ายของศิษย์เก่าที่ช่วยเสริมสร้างความสัมพันธ์และส่งเสริมความภาคภูมิใจในโรงเรียนบวรนิเวศของเรา
+            ร่วมเป็นส่วนหนึ่งเพื่อแลกเปลี่ยนประสบการณ์และร่วมทำกิจกรรมที่มีคุณค่าต่อสังคม</p>
+    </section>
+
+    <!-- Network Section -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto px-5 text-center">
+            <h3 class="text-3xl font-bold mb-8">เครือข่ายบวรนิเวศ</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Facebook Links -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-2">โรงเรียนวัดบวรนิเวศ</h4>
+                    <a href="https://www.facebook.com/WatBowonniwetSchool" target="_blank"
+                        class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">เยี่ยมชมเพจ</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-2">Bowonniwet Society</h4>
+                    <a href="https://www.facebook.com/profile.php?id=100064718254766" target="_blank"
+                        class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">เยี่ยมชมเพจ</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-2">สมาคมศิษย์เก่าบวรนิเวศ</h4>
+                    <a href="https://www.facebook.com/profile.php?id=100063673533771" target="_blank"
+                        class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">เยี่ยมชมโปรไฟล์</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-2">คณะกรรมการนักเรียนโรงเรียนวัดบวรนิเวศ</h4>
+                    <a href="https://www.facebook.com/bncommission" target="_blank"
+                        class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">เยี่ยมชมเพจ</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-2">สมาคมผู้ปกครองและครูโรงเรียนวัดบวรนิเวศ</h4>
+                    <a href="https://www.facebook.com/profile.php?id=100042120710311" target="_blank"
+                        class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">เยี่ยมชมเพจ</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Registration and Search System Section -->
+    <section class="container mx-auto py-16 px-5 text-center" id="register">
+        <h3 class="text-3xl font-bold mb-4">ระบบทะเบียนสมาชิกสมาคมศิษย์เก่าบวรนิเวศ</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <!-- Registration System -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-semibold mb-4">ระบบทะเบียนสมาชิก</h4>
+                <p class="text-lg mb-4">ทะเบียนสมาชิกสมาคมศิษย์เก่าบวรนิเวศฯ</p>
+                <a href="register.html"
+                    class="bg-blue-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600">ระบบทะเบียนสมาชิก</a>
+            </div>
+
+            <!-- Search System -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-semibold mb-4">ระบบค้นหาสมาชิก</h4>
+                <p class="text-lg mb-4">ค้นหาข้อมูลสมาชิกสมาคมศิษย์เก่าโดยใช้หมายเลขสมาชิกหรือชื่อ-สกุล.</p>
+                <a href="search.html"
+                    class="bg-blue-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600">ค้นหาสมาชิก</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto px-5 text-center">
+            <h3 class="text-3xl font-bold mb-8">ข้อตกลงการคุ้มครองข้อมูลส่วนบุคคล (PDPA)</h3>
+            
+
+                <center>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-semibold mb-2">ข้อตกลงการคุ้มครองข้อมูลส่วนบุคคล (PDPA)</h4>
+                        <a href="/pdpa.html"
+                            class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">ไปที่หน้าเว็บ</a>
+                    </div>
+                </center>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-center text-white">
+        สมาคมศิษย์เก่าบวรนิเวศ &copy 2024 พัฒนาระบบโดย : ธีรชานนท์ พวงเงิน ศบน.130
+    </footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>
